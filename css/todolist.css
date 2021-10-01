@@ -3,13 +3,13 @@
   position: relative;
   top: 10px;
   left: 10px;
-  width: 250px;
-  height: 375px;
+  width: 200px;
+  height: 300px;
   border: 2px solid #ffffff8f;
   border-radius: 10px;
 }
 .todo-form-box__header {
-  width: 251px;
+  width: 201px;
   height: 50px;
   background-color: rgba(255, 255, 255, 0.842);
   border-radius: 7px 7px 0 0;
@@ -28,12 +28,12 @@
 #todo-form input {
   position: absolute;
   display: block;
-  width: 230px;
+  width: 180px;
   margin: 10px 8px;
   padding: 5px;
   background: transparent;
   font-family: "Cookie", cursive;
-  font-size: 25px;
+  font-size: 20px;
   border-radius: 10px;
   border: none;
   padding: 15px, none;
@@ -43,7 +43,7 @@
 }
 .todo-form-box > ul {
   position: absolute;
-  top: 100px;
+  top: 93px;
   left: 10px;
   width: 90%;
   height: 207px;
@@ -54,7 +54,7 @@
 }
 li > span {
   color: white;
-  font-size: 25px;
+  font-size: 21px;
 }
 li > button {
   width: 30px;
