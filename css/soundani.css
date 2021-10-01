@@ -1,0 +1,93 @@
+div {
+  height: 75px;
+  width: 200px;
+}
+.dot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.move {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 90px;
+  animation: circle 2s cubic-bezier(1, -0.015, 0.44, 1.02) infinite;
+  animation-play-state: paused;
+}
+
+.bgsound__animation-bar.play .move {
+  animation-play-state: running;
+}
+.move > div {
+  background-color: white;
+  height: 5px;
+  width: 5px;
+  margin: 9px;
+  border-radius: 50%;
+}
+@keyframes circle {
+  0% {
+    transform: rotateZ(0);
+  }
+  50% {
+    transform: rotateZ(180deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+.stretch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stretch > div {
+  height: 25px;
+  width: 7px;
+  margin: 2px;
+  border-radius: 10px;
+  animation: stretch 1100ms cubic-bezier(0.63, 0.015, 1, 1) infinite;
+  animation-play-state: paused;
+}
+.bgsound__animation-bar.play .stretch > div {
+  animation-play-state: running;
+}
+.stretch > div:first-child {
+  animation-delay: 0.2s;
+}
+.stretch > div:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.stretch > div:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.stretch > div:nth-child(4) {
+  animation-delay: 0.5s;
+}
+.stretch > div:last-child {
+  animation-delay: 0.6s;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scaleY(1);
+    background-color: white;
+  }
+  25% {
+    transform: scaleY(2);
+    background-color: lightpink;
+  }
+  50% {
+    transform: scaleY(1);
+    background-color: coral;
+  }
+  75% {
+    transform: scaleY(1);
+    background-color: lightpink;
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
