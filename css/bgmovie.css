@@ -21,3 +21,6 @@ html {
   pointer-events: none;
   object-fit: cover;
 }
+.my-core-extension {
+  display: none;
+}
