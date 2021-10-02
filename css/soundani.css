@@ -10,7 +10,6 @@
   justify-content: center;
   align-items: center;
   height: 45px;
-  width: 90px;
   animation: circle 2s cubic-bezier(1, -0.015, 0.44, 1.02) infinite;
   animation-play-state: paused;
 }
