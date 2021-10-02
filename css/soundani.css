@@ -1,11 +1,9 @@
-div {
-  height: 75px;
-  width: 200px;
-}
 .dot {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 75px;
+  width: 200px;
 }
 .move {
   display: flex;
@@ -42,6 +40,8 @@ div {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 75px;
+  width: 200px;
 }
 .stretch > div {
   height: 25px;
