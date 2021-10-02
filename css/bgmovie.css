@@ -1,0 +1,23 @@
+@import "clock.css";
+@import "musicbox.css";
+@import "innermusic.css";
+@import "soundani.css";
+@import "notice.css";
+@import "todolist.css";
+@import "reset.css";
+@import "loginform.css";
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+#bg-movie {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-position: absolute;
+  pointer-events: none;
+  object-fit: cover;
+}

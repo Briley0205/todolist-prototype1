@@ -1,0 +1,41 @@
+.bgsound {
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  width: 200px;
+  height: 300px;
+  border: 2px solid #ffffff8f;
+  border-radius: 10px;
+}
+.bgsound__musicHeader {
+  width: 201px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.842);
+  border-bottom: 1px solid #ffffff8f;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bgsound__musicHeader > p {
+  font-family: "Cookie", cursive;
+  font-size: 28px;
+  color: #838383;
+}
+.bgsound__musicTitle {
+  width: 200px;
+  height: 50px;
+}
+.bgsound__animation-bar {
+  width: 200px;
+  height: 150px;
+  border-bottom: 1px solid #ffffff8f;
+}
+.bgsound__musicControler {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
