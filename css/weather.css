@@ -1,0 +1,19 @@
+#weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 395px;
+  left: 10px;
+  width: 250px;
+  height: 35px;
+  border: 2px solid #ffffff8f;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  font-family: "Cookie", cursive;
+}
+
+#weather span:first-child {
+  margin-right: 5px;
+}
