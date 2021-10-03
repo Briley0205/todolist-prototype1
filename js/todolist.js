@@ -15,16 +15,32 @@ function removeList(event) {
     saveLists();
 }
 
+function handleChecked(check) {
+    const checkFormList = check.target.parentElement;
+    checkFormList.classList.add("checked");
+}
+
 function paintTodo(newList) {
     const makeList = document.createElement("li");
     makeList.id = newList.id;
+    const makeCheckBox = document.createElement("label");
+    makeCheckBox.classList.add("checkbox");
+    makeCheckBox.addEventListener("click", handleChecked);
+    const checkBox = document.createElement("input");
+    checkBox.type = "checkbox";
+    const checkBoxIco = document.createElement("span");
+    checkBoxIco.classList.add("icon");
     const span = document.createElement("span");
     const btn = document.createElement("button")
     btn.addEventListener("click", removeList);
+
     makeList.appendChild(btn);
     btn.innerText = "✖";
-    makeList.appendChild(span);
+    makeList.appendChild(makeCheckBox);
+    makeCheckBox.appendChild(span);
     span.innerText = newList.text;
+    makeCheckBox.appendChild(checkBox);
+    makeCheckBox.appendChild(checkBoxIco);
     todoList.appendChild(makeList);
 }
 
