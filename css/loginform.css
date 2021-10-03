@@ -87,3 +87,18 @@ h1 {
   font-size: 15px;
   color: white;
 }
+#sayhi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 380px;
+  right: 10px;
+  width: 200px;
+  height: 35px;
+  /*  border: 2px solid #ffffff8f;
+  border-radius: 10px; */
+  color: white;
+  font-size: 30px;
+  font-family: "Cookie", cursive;
+}

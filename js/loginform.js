@@ -8,6 +8,13 @@ function handleLoginSubmit(event) {
     const username = nameForm.value;
     localStorage.setItem(USERNAME_KEY, username);
     loginBox.classList.add("hidden");
+    paintSayHi();
+}
+
+function paintSayHi() {
+    const name = localStorage.getItem(USERNAME_KEY);
+    const hiBox = document.querySelector("#sayhi span");
+    hiBox.innerText = `Hello, ${name}`
 }
 
 loginForm.addEventListener("submit", handleLoginSubmit);
@@ -16,4 +23,6 @@ const savedUserName = localStorage.getItem(USERNAME_KEY);
 
 if (savedUserName === null) {
     loginBox.classList.remove("hidden");
-} 
+} else {
+    paintSayHi();
+}
